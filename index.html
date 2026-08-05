@@ -11,7 +11,7 @@
       padding: 0;
       background-color: #fffaf7;
       color: #333;
-      font-size: 16px; /* taille adaptée au mobile */
+      font-size: 16px;
     }
     header {
       background: linear-gradient(135deg, #ff6f61, #ff9472);
@@ -21,7 +21,7 @@
     }
     header h1 {
       margin: 0;
-      font-size: 1.8em; /* taille réduite pour mobile */
+      font-size: 1.8em;
     }
     section {
       padding: 20px;
@@ -58,10 +58,27 @@
       margin: 20px 0;
     }
     .image-container img {
-      width: 100%;        /* occupe toute la largeur du mobile */
-      height: auto;       /* conserve les proportions */
+      width: 100%;
+      height: auto;
       border-radius: 8px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .black-button {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .black-button a {
+      background: #000;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .black-button a:hover {
+      background: #222;
     }
     footer {
       background: #333;
@@ -135,9 +152,14 @@
     </div>
   </section>
 
+  <div class="black-button">
+    <a href="https://shop.jifu.com/fr/fr/Kcoaching/product/pulse-ins-coffee-1" target="_blank">
+      Je commence mon défi 10 jours
+    </a>
+  </div>
+
   <footer>
     <p>&copy; 2026 GlowUp by K – Défi Express 10 Jours</p>
   </footer>
 </body>
 </html>
-
