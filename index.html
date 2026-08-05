@@ -3,28 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Défi Express 10 Jours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdfdfd;
+      background-color: #fffaf7;
       color: #333;
     }
     header {
-      background: #ff6f61;
+      background: linear-gradient(135deg, #ff6f61, #ff9472);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff6f61;
+    }
     section {
-      padding: 20px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+    h2 {
       color: #ff6f61;
+      margin-top: 0;
     }
     ul {
       list-style-type: "✔ ";
@@ -32,24 +51,35 @@
     }
     .cta {
       text-align: center;
-      margin: 30px 0;
+      margin: 40px 0;
     }
     .cta a {
       background: #ff6f61;
       color: white;
-      padding: 12px 25px;
+      padding: 15px 30px;
       text-decoration: none;
+      font-size: 1.2em;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
     }
     .cta a:hover {
       background: #e65c50;
+    }
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .image-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     footer {
       background: #333;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
     }
   </style>
@@ -60,7 +90,13 @@
     <p>Avant ou après les vacances… offre-toi 10 jours pour te sentir à nouveau bien dans ton corps !</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#pourquoi">Pourquoi ce défi</a>
+    <a href="#programme">Programme</a>
+    <a href="#commencer">Comment commencer</a>
+  </nav>
+
+  <section id="pourquoi">
     <h2>Pourquoi ce défi ?</h2>
     <p>
       Tu aimerais retrouver un ventre plus plat avant de partir… ou effacer les petits excès des vacances sans te lancer dans un régime compliqué ?
@@ -71,7 +107,41 @@
     <p>
       Pour seulement <strong>34 €</strong> (le prix varie selon le pays), rejoins un groupe de femmes motivées qui ont décidé de reprendre leur bien-être en main avec une méthode simple, motivante et accessible.
     </p>
+  </section>
 
+  <section id="programme">
     <h2>Ce que comprend ton programme</h2>
     <ul>
-      <li>Une semaine de detox pour débloquer la
+      <li>Une semaine de detox pour débloquer la perte de poids</li>
+      <li>Un programme simple à suivre</li>
+      <li>Un accompagnement quotidien dans un groupe Whatsapp bienveillant</li>
+      <li>Une cure de 10 jours de <strong>Café PULSE</strong> – café coupe-faim naturel à effet rassasiant</li>
+    </ul>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/800x400.png?text=Café+PULSE" alt="Café PULSE">
+    </div>
+
+    <p>
+      Du véritable café arabica accompagné d'une crème à base de coco et sans lactose, enrichi en collagène et en glucomannane, une fibre végétale issue de la racine de konjac qui favorise naturellement la satiété et t'aide à perdre du poids.
+    </p>
+  </section>
+
+  <section id="commencer">
+    <h2>Comment commencer ?</h2>
+    <p>
+      Pour te lancer avec nous il suffit de prendre ton Café PULSE. Je t'envoie ensuite ton planning et le groupe Whatsapp par email ou sur Instagram : 
+      <a href="https://instagram.com/glowup.by.k" target="_blank">@glowup.by.k</a>
+    </p>
+
+    <div class="cta">
+      <a href="mailto:glowup.by.k@gmail.com">Je veux commencer !</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 GlowUp by K - Défi Express 10 Jours</p>
+  </footer>
+</body>
+</html>
+
