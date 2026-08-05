@@ -11,62 +11,64 @@
       padding: 0;
       background-color: #fffaf7;
       color: #333;
+      font-size: 16px; /* taille adaptée au mobile */
     }
     header {
       background: linear-gradient(135deg, #ff6f61, #ff9472);
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 1.8em; /* taille réduite pour mobile */
     }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 20px;
       margin: auto;
     }
     h2 {
       color: #ff6f61;
       margin-top: 0;
+      font-size: 1.4em;
     }
     ul {
       list-style-type: "✔ ";
-      padding-left: 20px;
+      padding-left: 15px;
     }
     .cta {
       text-align: center;
-      margin: 40px 0;
+      margin: 30px 0;
     }
     .cta a {
       background: #ff6f61;
       color: white;
-      padding: 15px 30px;
+      padding: 12px 20px;
       text-decoration: none;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: bold;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+      border-radius: 6px;
+      display: inline-block;
     }
     .cta a:hover {
       background: #e65c50;
     }
     .image-container {
       text-align: center;
-      margin: 30px 0;
+      margin: 20px 0;
     }
     .image-container img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;        /* occupe toute la largeur du mobile */
+      height: auto;       /* conserve les proportions */
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     }
     footer {
       background: #333;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -76,7 +78,7 @@
     <p>Avant ou après les vacances… offre-toi 10 jours pour te sentir à nouveau bien dans ton corps !</p>
   </header>
 
-  <section id="pourquoi">
+  <section>
     <h2>Pourquoi ce défi ?</h2>
     <p>
       Tu aimerais retrouver un ventre plus plat avant de partir… ou effacer les petits excès des vacances sans te lancer dans un régime compliqué ?
@@ -89,7 +91,7 @@
     </p>
   </section>
 
-  <section id="programme">
+  <section>
     <h2>Ce que comprend ton programme</h2>
     <ul>
       <li>Une semaine de detox pour débloquer la perte de poids</li>
@@ -107,7 +109,7 @@
     </p>
   </section>
 
-  <section id="resultats">
+  <section>
     <h2>Résultats avant/après</h2>
     <p>Voici quelques transformations obtenues grâce au programme :</p>
     <div class="image-container">
@@ -121,7 +123,7 @@
     </div>
   </section>
 
-  <section id="commencer">
+  <section>
     <h2>Comment commencer ?</h2>
     <p>
       Pour te lancer avec nous, il suffit de prendre ton Café PULSE. Je t'envoie ensuite ton planning et le groupe Whatsapp par email ou sur Instagram : 
