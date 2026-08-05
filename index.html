@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <title>Défi Express 10 Jours</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Typographie moderne via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fffaf7;
@@ -33,8 +35,13 @@
       font-size: 1.4em;
     }
     ul {
-      list-style-type: "✔ ";
-      padding-left: 15px;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✔ ";
+      color: #ff6f61;
+      font-weight: bold;
     }
     .image-container {
       text-align: center;
@@ -45,12 +52,17 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
     .black-button {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .black-button a {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
       background: #000;
       color: white;
       padding: 14px 24px;
@@ -59,8 +71,9 @@
       font-weight: bold;
       border-radius: 6px;
       display: inline-block;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
-    .black-button a:hover {
+    .black-button:hover {
       background: #222;
     }
     footer {
@@ -69,6 +82,7 @@
       text-align: center;
       padding: 15px;
       font-size: 0.9em;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -131,11 +145,9 @@
     </p>
   </section>
 
-  <div class="black-button">
-    <a href="https://shop.jifu.com/fr/fr/Kcoaching/product/pulse-ins-coffee-1" target="_blank">
-      Je commence mon défi 10 jours
-    </a>
-  </div>
+  <a class="black-button" href="https://shop.jifu.com/fr/fr/Kcoaching/product/pulse-ins-coffee-1" target="_blank">
+    Je commence mon défi 10 jours
+  </a>
 
   <footer>
     <p>&copy; 2026 GlowUp by K – Défi Express 10 Jours</p>
